@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            font-family: 'Arial', sans-serif;
+            color: #FFD700;
+            overflow: hidden;
+        }
+        .container {
+            margin-top: 100px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+        }
+        h1 {
+            font-size: 3em;
+            animation: glow 2s infinite alternate;
+            color: #ff69b4;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ff1493; }
+            100% { text-shadow: 0 0 20px #ff69b4; }
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            background: #ff69b4;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to a Special Day! 🎉</h1>
+        <p>วันนี้เป็นวันพิเศษของเธอ คลิกปุ่มด้านล่างเพื่อรับความรักและคำอวยพรสุดพิเศษ 💖</p>
+        <a href="./page.html" class="btn">เข้าสู่หน้าหลัก</a>
+    </div>
+</body>
+</html>

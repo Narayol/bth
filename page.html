@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            font-family: 'Arial', sans-serif;
+            color: #FFD700;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+        .container {
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+            max-width: 80%;
+        }
+        h1 {
+            font-size: 3em;
+            animation: glow 2s infinite alternate;
+            color: #ff69b4;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ff1493; }
+            100% { text-shadow: 0 0 20px #ff69b4; }
+        }
+        .heart {
+            color: red;
+            font-size: 2em;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        audio {
+            margin-top: 20px;
+        }
+        .sunflower {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: url('https://source.unsplash.com/100x100/?sunflower') no-repeat center center;
+            background-size: cover;
+            animation: float 5s infinite alternate ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+        }
+        .footer {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            color: #ff69b4;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(255, 105, 180, 0.6);
+        }
+        .sunflower-field {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: url('https://source.unsplash.com/1600x200/?sunflower-field') repeat-x;
+            background-size: cover;
+            animation: moveField 10s linear infinite;
+            z-index: 1;
+        }
+        @keyframes moveField {
+            from { background-position: 0 0; }
+            to { background-position: -1600px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sunflower" style="top: 10%; left: 10%;"></div>
+    <div class="sunflower" style="top: 50%; left: 30%;"></div>
+    <div class="sunflower" style="top: 70%; left: 70%;"></div>
+    <div class="container">
+        <h1>Happy Birthday My Love! 🌻</h1>
+        <div class="image-container">
+            <img src="../picture/pam1.jpg" alt="คนน่ารัก1">
+            <img src="../picture/pam2.jpg" alt="คนน่ารัก2">
+        </div>
+        <p>24 ขวบแล้วสินะ ขอให้วันนี้เป็นวันที่พิเศษที่สุดสำหรับเธอ</p>
+        <p>ขอให้มีความสุขมากๆ สุขภาพแข็งแรง และสมหวังทุกประการ</p>
+        <p>ถึงเค้าจะไม่อยู่กับเธอแต่อยากบอกกับเธอว่า...</p>
+        <p>รักเธอเสมอ ❤️</p>
+        <p>เค้าตั้งใจทำ Website นี้เพื่อเธอเลยนะอาจจะดูเรียบง่ายแต่เค้าตั้งใจทำมากๆนะ</p>
+        <div class="heart">❤️</div>
+        <audio controls autoplay loop>
+            <source src="../music/คำอวยพร.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="sunflower-field"></div>
+    <footer class="footer">
+        Made with 💖 by Someone Special | Happy Birthday 🎂
+    </footer>
+</body>
+</html>
